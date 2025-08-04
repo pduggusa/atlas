@@ -13,14 +13,14 @@ steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '20.x'
-    workingDir: './blob/main/atlas-nestjs/'
+    workingDir: './atlas-nestjs/'
     command: 'install'
   displayName: 'Install Node.js'
 
 - task: Npm@1
   inputs:
     command: 'install'
-    workingDir: './blob/main/atlas-reactjs/'
+    workingDir: './atlas-reactjs/'
     verbose: true
   displayName: 'Install react.js'
 
