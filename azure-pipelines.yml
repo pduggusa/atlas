@@ -22,4 +22,5 @@ steps:
     command: 'install'
     workingDir: './blob/main/atlas-reactjs/'
     verbose: true
+  displayName: 'Install react.js'
 
