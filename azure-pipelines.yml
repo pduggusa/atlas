@@ -17,7 +17,9 @@ steps:
     command: 'install'
   displayName: 'Install Node.js'
 
-- script: |
-    npm install 
-    npm run build
-  displayName: 'npm install and build'
+- task: Npm@1
+  inputs:
+    command: 'install'
+    workingDir: './blob/main/atlas-reactjs/'
+    verbose: true
+
